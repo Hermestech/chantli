@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Shampoo</title>
+    <style>
+        body {
+           flex: initial;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: ##faf6e9;
+        }
+        .post{
+            display: block;
+            cursor: pointer;
+            position: relative;
+            
+        }
+        .post-list{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 293px));
+            justify-content: center;
+            grid-gap: 28px;
+        }
+        .post-image{
+            margin: 0;   
+        }
+        .post-image img {
+            width: 100%;
+            vertical-align: top;
+        }
+        .post-overlay {
+            background: rgba(0,0,0, .4);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display:none;
+            align-items:center;
+            justify-content: center;
+            color:white;
+            text-align:center;
+        }
+        .post:hover .post-overlay{
+            display: flex;
+        }
+       .post-likes{
+            width: 80px;
+            margin: 5px;
+            font-weight: bold;
+            text-align: center;
+            display: list-item;
+        }
+        .post-comments {
+            text-align: initial;
+        }
+        @media screen and (max-width:768px) {
+            .post-list{
+                grid-gap: 3px;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <!--empieza navbar-->
+    <nav class="fadeInDown">
+       
+        <div class="brand_image">
+            <div class="nav_options">
+              <a href="index.html">
+                <img class="nav_options-img"   src="assets/Transparente.png" alt="logo">
+                </a>  
+            </div>
+          </div>
+
+          <ul>  
+              <li> <a href="#">Quienes Somos?</a></li>
+              <li> <a href="shampoo.html">Para el cuidado del cabello</a></li>
+              <li> <a href="jabon.html">Para el cuidado de la piel</a></li>
+              <li> <a href="#">Para el cuidado de la salud</a></li>
+          </ul>
+    </nav>
+    <!--Termina navbar-->
+    <br>
+    <br>
+    <br>
+    <section class="post-list" id="Fotos">
+        <a href="venta.html" class="post" id="foto1">
+         <figure class="post-image">
+           <img src="./assets/champu/Champu1.jpg" alt="">
+         </figure>
+         <span class="post-overlay">
+             <p>
+                 <span class="post-likes">SHAMPOO CRECIMIENTO-ANTICAÍDA</span>
+                 <span class="post-comments">Shampoo de crecimiento y anticaída elaborado
+                    con sábila, romero y molonqui. Libre de
+                    sulfatos y sales.</span>
+             </p>
+         </span>
+        </a>
+
+        <a href="venta.html" class="post" id="foto2"> 
+            <figure class="post-image">
+              <img src="./assets/champu/Champu2.jpg" alt="" >
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">SHAMPOO CRECIMIENTO-ANTICAÍDA</span>
+                    <span class="post-comments">Shampoo de crecimiento y anticaída elaborado
+                        con sábila, romero y molonqui.
+                        Te sorprenderán los resultados con su rico y
+                        fresco aroma. Libre de sulfatos y sales.</span>
+                </p>
+            </span>
+           </a>
+
+           <a href="" class="post" id="foto3">
+            <figure class="post-image">
+              <img src="./assets/champu/Champu3.jpg" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">SHAMPOO CRECIMIENTO-ANTICAÍDA</span>
+                    <span class="post-comments">Shampoo de crecimiento y anticaída elaborado
+                        con sábila, romero y molonqui. Libre de
+                        sulfatos y sales.</span>
+                </p>
+            </span>
+           </a>
+
+           <a href="" class="post">
+            <figure class="post-image" id="foto1">
+              <img src="./assets/champu/Champu4.jpg" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">SHAMPOO ANTICASPA </span>
+                    <span class="post-comments">Shampoo anticaspa elaborado con neem. Libre
+                        de sulfatos y sales.</span>
+                </p>
+            </span>
+           </a>
+   
+           <a href="" class="post">
+               <figure class="post-image" id="foto2">
+                 <img src="./assets/champu/Champu5.jpg" alt="">
+               </figure>
+               <span class="post-overlay">
+                   <p>
+                    <span class="post-likes">SHAMPOO ANTICASPA</span>
+                    <span class="post-comments">Shampoo anticaspa elaborado con neem. Libre
+                        de sulfatos y sales.</span>
+                   </p>
+               </span>
+              </a>
+   
+              <a href="venta.html" class="post">
+               <figure class="post-image" id="foto3">
+                 <img src="./assets/champu/Champu6.jpg" alt="">
+               </figure>
+               <span class="post-overlay">
+                   <p>
+                      <span class="post-likes">SHAMPOO ANTICASPA</span>
+                    <span class="post-comments">Shampoo anticaspa elaborado con neem. Libre
+                        de sulfatos y sales.</span>
+                   </p>
+               </span>
+              </a>
+              
+
+              <a href="venta.html" class="post">
+                <figure class="post-image" id="foto3">
+                  <img src="./assets/champu/Rimel.jpg" alt="">
+                </figure>
+                <span class="post-overlay">
+                    <p>
+                       <span class="post-likes">RÍMEL</span>
+                     <span class="post-comments">Rímel de crecimiento y anticaída de
+                        pestañas, elaborado con romero, molonqui
+                        sábila, aceite de almendras, vitamina E,
+                        cera de abeja y carbón activado.</span>
+                    </p>
+                </span>
+               </a>
+        </section>
+        <br>
+        <br>
+        <br>
+    <footer class="footer">
+        <a class="footera" href="#">Términos y condiciones</a>
+        <div class="footera"> <a href="mailto:contacto@mail.com">contacto@mail.com</a></div> 
+      </footer>
+      <script src="./scripts/script.js"></script>
+</body>
+</html>

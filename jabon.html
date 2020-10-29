@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Jabones</title>
+    <style>
+        body {
+           flex: initial;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #faf6e9;
+        }
+        .post{
+            display: block;
+            cursor: pointer;
+            position: relative;
+            
+        }
+        .post-list{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 293px));
+            justify-content: center;
+            grid-gap: 28px;
+        }
+        .post-image{
+            margin: 0;   
+        }
+        .post-image img {
+            width: 100%;
+            vertical-align: top;
+        }
+        .post-overlay {
+            background: rgba(0,0,0, .4);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display:none;
+            align-items:center;
+            justify-content: center;
+            color:white;
+            text-align:center;
+        }
+        .post:hover .post-overlay{
+            display: flex;
+        }
+        .post-likes{
+            width: 80px;
+            margin: 5px;
+            font-weight: bold;
+            text-align: center;
+            display: list-item;
+        }
+        .post-comments {
+            text-align: initial;
+        }
+        @media screen and (max-width:768px) {
+            .post-list{
+                grid-gap: 3px;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <!--empieza navbar-->
+    <nav class="fadeInDown">
+       
+        <div class="brand_image">
+            <div class="nav_options">
+              <a href="index.html">
+                <img class="nav_options-img"   src="assets/Transparente.png" alt="logo">
+                </a>  
+            </div>
+          </div>
+          
+          <ul>  
+              <li> <a href="#">Quienes Somos?</a></li>
+              <li> <a href="shampoo.html">Para el cuidado del cabello</a></li>
+              <li> <a href="jabon.html">Para el cuidado de la piel</a></li>
+              <li> <a href="#">Para el cuidado de la salud</a></li>
+          </ul>
+    </nav>
+    <!--Termina navbar-->
+    <!--Empieza catalogo-->
+    <br>
+    <br>
+    <br>
+    <section class="post-list">
+        <a href="" class="post">
+         <figure class="post-image">
+           <img src="./assets/Jabones/Jbambu.jpg" alt="">
+         </figure>
+         <span class="post-overlay">
+             <p>
+                 <span class="post-likes">JABÓN DE BAMBÚ</span>
+                 <span class="post-comments">Jabón corporal antiedad. Gracias al contenido de
+                    silicio que contiene el bambú aumenta la
+                    elasticidad, además que contiene un protector
+                    natural de los rayos UV. Disfruta su fresco aroma.
+                    Libre de parabenos y colorantes.</span>
+             </p>
+         </span>
+        </a>
+
+        <a href="" class="post">
+            <figure class="post-image">
+              <img src="./assets/Jabones/Jcaracol.jpg" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">JABÓN DE BABA DE CARACOL</span>
+                    <span class="post-comments">Jabón corporal regenerador de piel. Ayuda a
+                        difuminar las cicatrices y manchas de la piel,
+                        gracias a su contenido de alantoína y ácido
+                        glicolico presente en la baba de caracol. Atrévete a
+                        usarlo. Libre de parabenos y colorantes.</span>
+                </p>
+            </span>
+           </a>
+
+           <a href="" class="post">
+            <figure class="post-image">
+              <img src="./assets/Jabones/Jcarbon.jpg" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">JABÓN DE CARBÓN ACTIVADO</span>
+                    <span class="post-comments">Jabón facial y corporal desintoxicante.
+                        Elimina impurezas, combate espinillas y
+                        puntos negros. Deja una sensación de
+                        limpieza profunda y tersa la piel. Libre de
+                        parabenos y colorantes.</span>
+                </p>
+            </span>
+           </a>
+
+           <a href="" class="post">
+            <figure class="post-image">
+              <img src="./assets/Jabones/Jcoco.jpg" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">JABÓN DE AVENA-COCO</span>
+                    <span class="post-comments">Jabón corporal aclarante, elimina impurezas y
+                        nutre la piel. Te encantará la sensación en tu piel
+                        y su dulce aroma a coco. Libre de parabenos y
+                        colorantes.</span>
+                </p>
+            </span>
+           </a>
+   
+           <a href="" class="post">
+               <figure class="post-image">
+                 <img src="./assets/Jabones/Jlavanda.jpg" alt="">
+               </figure>
+               <span class="post-overlay">
+                   <p>
+                       <span class="post-likes">JABÓN DE LAVANDA</span>
+                       <span class="post-comments">Jabón facial y corporal antiacné. Gracias
+                        a la propiedad bactericida de la lavanda,
+                        con un inconfundible aroma. Libre de
+                        parabenos y colorantes.</span>
+                   </p>
+               </span>
+              </a>
+   
+              <a href="" class="post">
+               <figure class="post-image">
+                 <img src="./assets/Jabones/Jmandarina.jpg" alt="">
+               </figure>
+               <span class="post-overlay">
+                   <p>
+                       <span class="post-likes">JABÓN DE MANDARINA</span>
+                       <span class="post-comments">Jabón corporal reanimante y tonificante.
+                        Para agotamiento físico y auxiliar en la
+                        disminución de estrías. Con un dulce
+                        aroma. Libre de parabenos y colorantes.</span>
+                   </p>
+               </span>
+              </a>
+   
+              <a href="" class="post">
+                <figure class="post-image">
+                  <img src="./assets/Jabones/Jnacar.jpg" alt="">
+                </figure>
+                <span class="post-overlay">
+                    <p>
+                        <span class="post-likes">JABÓN DE CONCHA NÁCAR-
+                            MANZANILLA</span>
+                        <span class="post-comments">Jabón facial aclarante y exfoliante de noche.
+                            Elimina células muertas y con propiedades aclarantes
+                            gracias a la concha nácar y manzanilla. Libre de
+                            parabenos y colorantes.</span>
+                    </p>
+                </span>
+               </a>
+       
+               <a href="" class="post">
+                   <figure class="post-image">
+                     <img src="./assets/Jabones/Jolivo.jpg" alt="">
+                   </figure>
+                   <span class="post-overlay">
+                       <p>
+                           <span class="post-likes">JABÓN DE OLIVO-MIEL</span>
+                           <span class="post-comments">Jabón facial antioxidante. Para prevenir
+                            manchas y líneas de expresión, además
+                            de dejar la piel tersa con el inconfundible
+                            aroma a miel. Libre de parabenos y
+                            colorantes.</span>
+                       </p>
+                   </span>
+                  </a>
+       
+                  <a href="" class="post">
+                   <figure class="post-image">
+                     <img src="./assets/Jabones/C1.jpg" alt="">
+                   </figure>
+                   <span class="post-overlay">
+                       <p>
+                           <span class="post-likes">CREMA ANTIEDAD DE DÍA</span>
+                           <span class="post-comments">Crema facial de día humectante, para prevenir
+                            manchas y combatir líneas de expresión,
+                            elaborada con aceites de oliva, romero, coco
+                            orgánico, extracto de manzanilla, baba de
+                            caracol, filtro FPS 30, colágeno, vitamina E y
+                            esencia de lavanda. Con un relajante y dulce
+                            aroma.</span>
+                       </p>
+                   </span>
+                  </a>
+
+                  <a href="" class="post">
+                    <figure class="post-image">
+                      <img src="./assets/Jabones/C2.jpg" alt="">
+                    </figure>
+                    <span class="post-overlay">
+                        <p>
+                            <span class="post-likes">CREMA ANTIEDAD DE NOCHE</span>
+                            <span class="post-comments">Crema facial de noche humectante. para
+                                combatir manchas y líneas de expresión,
+                                elaborada con aceites de oliva, romero, coco
+                                orgánico, extracto de manzanilla, aceite de rosa
+                                mosqueta, aceite de bergamota, colágeno y
+                                vitamina E. Con un fresco y delicioso aroma.</span>
+                        </p>
+                    </span>
+                   </a>
+           
+                   <a href="" class="post">
+                       <figure class="post-image">
+                         <img src="./assets/Jabones/C3.jpg" alt="">
+                       </figure>
+                       <span class="post-overlay">
+                           <p>
+                               <span class="post-likes">CREMA CONTORNO DE OJOS</span>
+                               <span class="post-comments">Crema contorno de ojos para combatir
+                                bolsas y líneas de expresión, elaborada con
+                                aceite de olivo, extracto de árnica, colágeno
+                                y vitamina E. Delicioso aroma relajante.
+                                Libre de derivados del petróleo.</span>
+                           </p>
+                       </span>
+                      </a>
+           
+                      <a href="" class="post">
+                       <figure class="post-image">
+                         <img src="./assets/Jabones/Labial.jpg" alt="">
+                       </figure>
+                       <span class="post-overlay">
+                           <p>
+                               <span class="post-likes">BÁLSAMO OLIVO-MIEL-COCO</span>
+                               <span class="post-comments">Bálsamo labial humectante y protector de
+                                labios con filtro natural. No podrá resistir su
+                                delicioso aroma y sensación. Libre de
+                                derivados del petróleo.</span>
+                           </p>
+                       </span>
+                      </a>
+                <!--Termina catalogo-->          
+    </section>
+    <footer class="footer">
+        <a class="footera" href="#">Términos y condiciones</a>
+        <div class="footera"> <a href="mailto:contacto@mail.com">contacto@mail.com</a></div> 
+      </footer>
+</body>
+</html>
